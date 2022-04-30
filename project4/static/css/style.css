@@ -1,12 +1,17 @@
 body {
-    background-color: #F9FAFC;
+    background-image: url("../media/pexels-cottonbro-7322134.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    padding-bottom: -1%;
 }
 
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    color: #dcdce4;
 }
 
 .red-o {
@@ -22,7 +27,7 @@ body {
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #333a41;
 }
 
 .main-bg {
@@ -62,7 +67,7 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #c5cacf;
     color: white;
     position: relative;
 }
@@ -79,7 +84,7 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #bdc1c5;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -88,7 +93,7 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #d3d8dd;
 }
 
 .post-link:hover,
@@ -124,7 +129,7 @@ body {
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: #93979b;
     text-decoration: underline;
 }
 
@@ -139,4 +144,37 @@ body {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+.text-white {
+    color: whitesmoke;
+}
+
+.navbar-text {
+    text-align: center;
+}
+
+#right-about {
+    color: whitesmoke;
+    z-index: 1;
+    padding-top: 4%;
+    padding-left: 30%;
+}
+
+#center-about {
+    color: whitesmoke;
+    z-index: 1;
+    padding-top: 4%;
+    padding-left: 15%;
+}
+
+#left-about {
+    color: whitesmoke;
+    z-index: 1;
+    padding-top: 6%;
+    padding-left: 6%;
+}
+
+.footer {
+    text-align: right;
 }
