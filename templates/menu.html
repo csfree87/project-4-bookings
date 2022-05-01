@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="#">
 </head>
 
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100 menu">
     <!-- Navigation -->
 
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -34,10 +34,10 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link text-white" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{% url 'menu' %}">Drink Menu</a>
+                        <a class="nav-link active text-white" href="{% url 'menu' %}">Drink Menu</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -60,9 +60,49 @@
         </div>
     </nav>
 
-    {% block content %}
-    <!-- Content Goes here -->
-    {% endblock content %}
+    <div class="row">
+        <div class="content-part-3">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="row content-part-3-inner">
+                    <div class="col-md-7 col-sm-7 col-xs-12">
+                        <div class="content-part-3-right-h4">Red Stag Classic</div>
+                        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>60 sek</i></div>
+                        <p class="descriptions">Sweet sip with a little kick. Red-cherry Bourbon, sure to please.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="row2 content-part-3-inner">
+                    <div class="col-md-7 col-sm-7 col-xs-12">
+                        <div class="content-part-3-right-h4">Glenfiddich</div>
+                        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>70 sek</i></div>
+                        <p class="descriptions">Classic whiskey, light with a hint of vanilla.</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="row2 content-part-3-inner">
+                    <div class="col-md-7 col-sm-7 col-xs-12">
+                        <div class="content-part-3-right-h4">Bowmore</div>
+                        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>90 sek</i></div>
+                        <p class="descriptions">A smokey favorite, sure to make you warm.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="row2" class="col-md-6 col-sm-12 col-xs-12">
+                <div class="row content-part-3-inner">
+                    <div class="col-md-7 col-sm-7 col-xs-12">
+                        <div class="content-part-3-right-h4">Bar Snacks</div>
+                        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>40 sek per portion/-</i></div>
+                        <p class="descriptions"> A selection of nuts, cheese, meats, and bread perfect with whiskey pairings.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3">

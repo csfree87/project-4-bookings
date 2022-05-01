@@ -7,6 +7,15 @@ body {
     padding-bottom: -1%;
 }
 
+body, .menu {
+    background-image: url("../media/drink-7068737_1280.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    padding-bottom: -1%;
+}
+
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
@@ -178,3 +187,58 @@ body {
 .footer {
     text-align: right;
 }
+
+.row {
+    margin-left: -20%;
+    margin-bottom: 6%;
+}
+
+.content-part-3 { 
+    padding-top: 0%;
+    padding-left: 25%;
+    display: inline-block;
+}
+
+.content-part-3-inner { 
+    padding:10px 0px;
+}
+
+.content-part-3-right-h4 { 
+    font-weight:600; 
+    color:rgb(168, 157, 157); 
+    padding:0px;
+}
+
+.margin_5 { 
+    margin:5px 0px; 
+    float:right;}
+
+.margin_p3 { 
+    margin:10px 0px 5px;
+}
+.price {
+    color:rgb(207, 188, 188);
+    padding:5px 0px; 
+    font-weight:bold; 
+    font-size:15px;
+}
+
+.green { 
+    color:#cccfca;
+    font-weight:bold;
+    font-size:16px;
+    }
+
+.descriptions {
+    color: whitesmoke;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+	.img{ width:100%;}
+	}
+
+@media only screen and (min-width:600px) and (max-width:768px){
+	.img{ width:96%; border-radius:3px;}
+	.content-part-3-right-h4{ font-weight:600; color:#000; padding:5px 0px 0px;}
+	}
+

@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'django_summernote',
     'project4',
+    'djreservation',
 ]
 
 SITE_ID = 1
@@ -65,6 +66,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'djreservation.middleware.ReservationMiddleware',
 ]
 
 ROOT_URLCONF = 'codestar.urls'
@@ -86,6 +88,10 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'codestar.wsgi.application'
+
+DEFAULT_FROM_EMAIL = "mail@example.com"
+EMAIL_HOST = "localhost"
+EMAIL_PORT = "1025"
 
 
 # Database
