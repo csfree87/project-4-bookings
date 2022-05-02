@@ -50,7 +50,6 @@ INSTALLED_APPS = [
     'cloudinary',
     'django_summernote',
     'project4',
-    'djreservation',
 ]
 
 SITE_ID = 1
@@ -66,7 +65,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'djreservation.middleware.ReservationMiddleware',
 ]
 
 ROOT_URLCONF = 'codestar.urls'
