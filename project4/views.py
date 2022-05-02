@@ -1,5 +1,4 @@
-from django.shortcuts import render, get_object_or_404
-from django.views import generic, View
+from django.shortcuts import render
 
 
 def index(request):
@@ -12,4 +11,3 @@ def menu(request):
 
 def booking(request):
     return render(request, 'booking.html')
-
